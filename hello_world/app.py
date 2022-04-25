@@ -53,7 +53,7 @@ def lambda_handler(event, context):
         return {
             "statusCode": 400,
             "body": json.dumps({
-                "message": "Invalid body (first_name & last_name)!"
+                "message": "Invalid body (first_name | last_name)!"
             })
         }
     if message is None:
